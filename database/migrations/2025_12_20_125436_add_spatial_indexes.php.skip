@@ -1,0 +1,61 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        // Add regular indexes for performance
+        Schema::table('kelurahans', function (Blueprint $table) {
+            $table->index(['kecamatan', 'nama']);
+            $table->index(['latitude', 'longitude']);
+        });
+
+        Schema::table('potensi_investasis', function (Blueprint $table) {
+            $table->index(['kelurahan_id']);
+            $table->index(['jenis_potensi']);
+            $table->index(['skala_peluang']);
+            $table->index(['status_lahan']);
+            $table->index(['status_perizinan']);
+        });
+
+        Schema::table('minat_investors', function (Blueprint $table) {
+            $table->index(['potensi_investasi_id']);
+            $table->index(['email']);
+            $table->index(['created_at']);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        // Drop regular indexes
+        Schema::table('kelurahans', function (Blueprint $table) {
+            $table->dropIndex(['kecamatan', 'nama']);
+            $table->dropIndex(['latitude', 'longitude']);
+        });
+
+        Schema::table('potensi_investasis', function (Blueprint $table) {
+            $table->dropIndex(['kelurahan_id']);
+            $table->dropIndex(['jenis_potensi']);
+            $table->dropIndex(['skala_peluang']);
+            $table->dropIndex(['status_lahan']);
+            $table->dropIndex(['status_perizinan']);
+        });
+
+        Schema::table('minat_investors', function (Blueprint $table) {
+            $table->dropIndex(['potensi_investasi_id']);
+            $table->dropIndex(['email']);
+            $table->dropIndex(['created_at']);
+        });
+    }
+};

@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.8456, -6.2088],
+            [106.8460, -6.2088],
+            [106.8460, -6.2092],
+            [106.8456, -6.2092],
+            [106.8456, -6.2088]
+          ]
+        ]
+      },
+      "properties": {
+        "nama": "Test Kelurahan"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+/* =====================================================================
+   SIPOTENSI SANGIHE — ULTRA-LUXURY EXECUTIVE BACK-OFFICE THEME
+   Tailored for Provincial & National Regional Innovation Competitions
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --luxury-gold: #f59e0b;
+    --luxury-gold-dark: #d97706;
+    --luxury-gold-glow: rgba(245, 158, 11, 0.35);
+    --luxury-dark-bg: #0a0f1d;
+    --luxury-card-bg: #0f172a;
+    --luxury-card-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar for Admin */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0f1d;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Global Typography & Headings */
+body, .fi-body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, .fi-header-heading, .fi-sidebar-brand {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: -0.02em;
+}
+
+/* Sidebar Luxury Glassmorphic Styling */
+aside.fi-sidebar {
+    background: linear-gradient(180deg, #0a0f1d 0%, #0d1527 100%) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+.fi-sidebar-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+    background: rgba(10, 15, 29, 0.6) !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.fi-sidebar-item-button {
+    border-radius: 10px !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.fi-sidebar-item-button:hover {
+    background: rgba(255, 255, 255, 0.06) !important;
+    transform: translateX(3px) !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(217, 119, 6, 0.28) 100%) !important;
+    border: 1px solid rgba(245, 158, 11, 0.45) !important;
+    color: #fbbf24 !important;
+    box-shadow: 0 0 16px rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Topbar Executive Header */
+header.fi-topbar {
+    background: rgba(10, 15, 29, 0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Stat & KPI Cards (Widgets) */
+.fi-wi-stats-overview-stat {
+    background: linear-gradient(180deg, #0f172a 0%, #131c31 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.fi-wi-stats-overview-stat:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
+    border-color: rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Tables Luxury Refinement */
+.fi-ta-ctn {
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fi-ta-table {
+    border-collapse: separate !important;
+}
+
+.fi-ta-row:hover {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Primary Button Gold Gradient */
+.fi-btn-color-primary {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35) !important;
+    transition: all 0.2s ease !important;
+}
+
+.fi-btn-color-primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5) !important;
+}
+
+/* Badges with Neon-Glow Effect */
+.fi-badge {
+    border-radius: 9999px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    padding: 3px 10px !important;
+}
+
+/* Shimmer Gold Bar in Header */
+.fi-header:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60px;
+    background: linear-gradient(90deg, #f59e0b, transparent);
+    margin-top: 6px;
+    border-radius: 2px;
+}
+

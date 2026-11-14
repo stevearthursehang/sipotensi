@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Title Slide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            width: 1920px;
+            height: 1080px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 50% 25%, #1e3a8a 0%, #0a0f1d 70%, #030712 100%);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .bg-grid {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: 1;
+        }
+        .glow-circle {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.35) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .content {
+            position: relative;
+            z-index: 10;
+            max-width: 1500px;
+            padding: 40px;
+        }
+        .badge-gov {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(30, 41, 59, 0.8);
+            border: 1.5px solid rgba(56, 189, 248, 0.4);
+            border-radius: 50px;
+            padding: 10px 28px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #38bdf8;
+            letter-spacing: 1.5px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .main-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 68px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #ffffff 30%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sub-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .desc-text {
+            font-size: 22px;
+            color: #94a3b8;
+            max-width: 1100px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+        }
+        .feature-pills {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .pill {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 14px;
+            padding: 14px 26px;
+            font-size: 19px;
+            font-weight: 600;
+            color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        .pill i { color: #38bdf8; font-size: 22px; }
+        .footer-note {
+            position: absolute;
+            bottom: 35px;
+            font-size: 18px;
+            color: #64748b;
+            font-weight: 500;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow-circle"></div>
+    <div class="content">
+        <div class="badge-gov">
+            <i class="bi bi-shield-check"></i>
+            INNOVATIVE GOVERNMENT AWARD (IGA) 2026
+        </div>
+        <h1 class="main-title">SIPOTENSI SANGIHE</h1>
+        <div class="sub-title">Sistem Informasi Potensi Investasi Terpadu Berbasis WebGIS & 3D Digital Twin</div>
+        <p class="desc-text">Transformasi Digital Promosi & Pelayanan Penanaman Modal Daerah di Beranda Terdepan Kawasan Perbatasan Pasifik</p>
+        <div class="feature-pills">
+            <div class="pill"><i class="bi bi-geo-alt-fill text-primary"></i> 29 Titik Proyek Unggulan</div>
+            <div class="pill"><i class="bi bi-box-fill text-warning"></i> Model 3D Digital Twin</div>
+            <div class="pill"><i class="bi bi-calculator-fill text-success"></i> Kalkulator Finansial ROI</div>
+            <div class="pill"><i class="bi bi-file-earmark-pdf-fill text-danger"></i> Dokumen Prospektus e-LoI</div>
+        </div>
+    </div>
+    <div class="footer-note">Pemerintah Kabupaten Kepulauan Sangihe — BAPPERIDA & DPMPTSP © 2026</div>
+</body>
+</html>
